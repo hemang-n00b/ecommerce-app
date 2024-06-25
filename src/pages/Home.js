@@ -176,6 +176,99 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className='featured-wrapper home-wrapper-2 py-4 px-4'>
+        <div className='container-fluid'>
+        <div className='row special-product-padding'>
+          <div className='col-12 mx-4 mb-3'>
+            <h3 className='section-heading'>Top selling products!</h3>
+          </div>
+        </div> 
+        <div className='row justify-content-between d-flex align-items-center product-padding'>  
+          <Product/>
+        </div>
+        </div>
+      </section>
+      <section className='famous-wrapper-2 home-wrapper-2 py-5 px-4'>
+        <div className='container-fluid'>
+          <div className='row align-items-center mx-5 px-5'>
+
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img src="images/aes-1.jpg" alt="aes-1" className='img-fluid'/>
+                <div className='famous-content position-absolute'>
+                  <h5>Big Screen</h5>
+                  <h6>Apple Watch Series 6</h6>
+                  <p className='mb-0'>From $399.00 $16/mo. for 24 mo*</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img src="images/aes-2.jpg" alt="aes-1" className='img-fluid'/>
+                <div className='famous-content position-absolute'>
+                  <h5>Big Screen</h5>
+                  <h6>Apple Watch Series 6</h6>
+                  <p className='mb-0'>From $399.00 $16/mo. for 24 mo*</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img src="images/aes-3.jpg" alt="aes-1" className='img-fluid'/>
+                <div className='famous-content position-absolute'>
+                  <h5>Big Screen</h5>
+                  <h6>Apple Watch Series 6</h6>
+                  <p className='mb-0'>From $399.00 $16/mo. for 24 mo*</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img src="images/aes-5.jpg" alt="aes-1" className='img-fluid'/>
+                <div className='famous-content position-absolute'>
+                  <h5>Big Screen</h5>
+                  <h6>Apple Watch Series 6</h6>
+                  <p className='mb-0'>From $399.00 $16/mo. for 24 mo*</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section className='special-wrapper py-5 home-wrapper-2'>
+        <div className='container-fluid px-5'>
+          <div className='row special-product-padding mx-2 mb-3'>
+            <div className='col-12'>
+              <h3 className='section-heading'>Special Products</h3>
+            </div>
+          </div>
+          <div className='row special-product-padding'>
+            <SpecialProduct/>
+            <SpecialProduct/>
+            <SpecialProduct/>
+            <SpecialProduct/>
+          </div>
+        </div>
+      </section>
+      <section className='product-wrapper home-wrapper-2 py-4 px-4'>
+        <div className='container-fluid'>
+        <div className='row special-product-padding'>
+          <div className='col-12 mx-4 mb-3'>
+            <h3 className='section-heading'>Our Popular Products</h3>
+          </div>
+        </div> 
+        <div className='row justify-content-between d-flex align-items-center product-padding'>  
+          <Product/>
+          <Product/>
+          <Product/>
+          <Product/>
+        </div>
+        </div>
+      </section>
       <section className='home-wrapper-2 py-4 px-4'>
         <div className='container-fluid'>
           <div className='row align-items-center mx-5 px-4'>
@@ -209,34 +302,6 @@ const Home = () => {
                 </Marquee>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section className='featured-wrapper home-wrapper-2 py-4 px-4'>
-        <div className='container-xxl'>
-        <div className='row'>
-          <div className='col-12'>
-            <h3 className='section-heading'>Top selling products!</h3>
-          </div>
-          <Product/>
-          <Product/>
-          <Product/>
-          <Product/>
-        </div>   
-        </div>
-      </section>
-      <section className='special-wrapper py-5 home-wrapper-2'>
-        <div className='container-xxl'>
-          <div className='row'>
-            <div className='col-12'>
-              <h3 className='section-heading'>Special Products</h3>
-            </div>
-          </div>
-          <div className='row'>
-            <SpecialProduct/>
-            <SpecialProduct/>
-            <SpecialProduct/>
-            <SpecialProduct/>
           </div>
         </div>
       </section>
