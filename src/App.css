@@ -16,6 +16,7 @@
   --color-777777: #777777;
   --color-1c1b1b: #1c1b1b;
   --color-1c1b1b: #1c1c1b;
+  --color-febd69: #febd69;
 }
 
 .section-heading{
@@ -296,6 +297,24 @@ footer .input-group-text{
   color: var(--color-777777);
 }
 
+.single-blog-card a{
+  font-size:18px;
+  color:var(--color-777777);
+  margin-bottom:20px;
+}
+
+.single-blog-card h3{
+  font-size:24px;
+  font-weight:600;
+  color : var(--color-1c1b1b)
+
+}
+
+.single-blog-card p{
+  color:var(--color-777777);
+  font-size:14px;
+}
+
 /* Blog Section CSS ends here */
 
 /* Product card CSS starts here */
@@ -548,3 +567,126 @@ footer .input-group-text{
 }
 
 /* Store Ends */
+
+/* Contact page starts here */
+
+.contact-inner-wrapper{
+  padding:30px 20px;
+  border-radius:15px;
+  background-color: white;
+  gap:15px;
+} 
+
+.contact-inner-wrapper>div{
+  width:48;
+}
+
+.contact-title{
+  font-size:26px;
+  font-weight:500;
+  line-height:35px;
+  text-align:left;
+  margin-top:0;
+}
+
+.contact-inner-wrapper form.form-control{
+background-color:var(--color-f5f5f7);
+border-radius:10px;
+border-color:transparent;
+padding:10px;
+}
+
+.contact-inner-wrapper ul{
+  list-style-type:none;
+}
+
+/* Contact page ends here */
+
+/* Compare product start */
+
+.compare-product-card{
+  padding:20px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.compare-product-card .cross,.wishlist-card .cross{
+  top:15px;
+  right:15px;
+  width:25px;
+  padding:3px;
+  cursor: pointer;
+}
+
+.compare-product-details h5.title , .wishlist-card h5.title{
+  font-size:15px;
+  line-height:22px;
+  font-weight:500;
+  color : var(--color-1c1b1b);
+
+}
+
+.compare-product-details h6.price , .wishlist-card h6.title{
+  font-size:15px;
+  line-height:22px;
+  font-weight:400;
+}
+
+
+.compare-product-card .product-detail{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding:10px 0;
+  border-top: 1px solid var(--color-131921);
+}
+
+/* Compare product end */
+
+/* auth card */
+
+.auth-card{
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  margin:30px auto;
+}
+
+.auth-card h3{
+  font-size:19px;
+  font-weight:500;
+  color:var(--color-777777);
+  border-radius:10px;
+}
+
+.auth-card .form-control{
+  height:50px;
+  background-color:var(--color-f5f5f7);
+  font-size:14px;
+}
+
+.auth-card a{
+  font-size:14px;
+  font-weight:400;
+  
+}
+
+.auth-card .signup{
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+.auth-card .signup:hover{
+  background-color: var(--color-131921);
+  color: white;
+}
+
+.auth-card p{
+  font-size:13px;
+  color:var(--color-777777);
+}
+
+.cancel{
+  color:black;
+}
+
+/* auth card ends here */

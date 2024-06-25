@@ -3,7 +3,7 @@ import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 import StarRatingComponent from 'react-rating-stars-component'
 import Product from '../components/Product'
-
+import Color from '../components/Color'
 const Store = () => {
 const [grid, setGrid] = useState(3);
     return (
@@ -60,41 +60,8 @@ const [grid, setGrid] = useState(3);
 
                         <div>
                             <h5 className='sub-title'> Colors </h5>
-                            <div className='d-flex flex-wrap'>
-                                <ul className='colors'>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-
-                                </ul>
-
+                            <div>
+                            <Color/>
                             </div>
                         </div>
                         <div>
