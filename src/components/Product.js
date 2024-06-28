@@ -7,7 +7,7 @@ const Product = (props) => {
     console.log(location)
     return <>
         <div className={`${location.pathname === "/store" ? `gr-${grid}`: "col-3"}`}>
-            <Link className="width-100">
+            <Link to=':id' className="width-100">
             <div className="product-card position-relative mr-0">
                 <div className="wishlist-icon position-absolute">
                     <Link>
