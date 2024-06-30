@@ -3,8 +3,6 @@ const {createUser,loginUserCtrl, resetPassword , updatePassword, getAllUsers, ge
 const { authMiddleware,isAdmin } = require('../middlewares/authMiddleware');
 const router = express.Router();
 
-
-
 router.post("/register" , createUser);
 router.post("/forgot-password-token" , forgotPasswordToken);
 router.put("/reset-password/:token" , resetPassword);
@@ -18,9 +16,6 @@ router.delete("/:id" , deleteAUser);
 router.put("/edit-user", authMiddleware , updateAUser);
 router.put("/block-user/:id", authMiddleware ,isAdmin, blockUser);
 router.put("/unblock-user/:id", authMiddleware ,isAdmin, unblockUser);
-
-
-
 
 
 module.exports = router;
