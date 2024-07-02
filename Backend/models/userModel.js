@@ -41,14 +41,14 @@ var userSchema = new mongoose.Schema({
     
     },
     address:[{ type:mongoose.Schema.Types.ObjectId , ref:"Address"}],
-    wishllist:[{ type:mongoose.Schema.Types.ObjectId , ref:"Product"}],
+    wishlist:[{ type:mongoose.Schema.Types.ObjectId , ref:"Product"}],
     passwordResetToken:{
         type:String,
     },
     passwordResetExpire:{
         type:Date,
     },
-    passswordChangedAt:{
+    passwordChangedAt:{
         type:Date,
     },
 }
