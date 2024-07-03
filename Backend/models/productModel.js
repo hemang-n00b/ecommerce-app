@@ -38,15 +38,14 @@ var productSchema = new mongoose.Schema({
         type:Number,
         default:0,
     },
-    images:{
-        type:Array,
-    },
+    images:[],
     color:{
         type:String,
         required:true,
     },
     ratings:[{
         star:Number,
+        comments:String,
         postedBy:{
             type:mongoose.Schema.Types.ObjectId,
             ref:"User",
