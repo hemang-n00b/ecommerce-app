@@ -1,6 +1,7 @@
 import React from 'react'
 import {NavLink , Link} from "react-router-dom" ;
 import { BsSearch } from 'react-icons/bs';
+import cart from '../images/cart.svg';
 const Header = () => {
   return (
     <>
@@ -60,7 +61,7 @@ const Header = () => {
               </div>
               <div>
                 <Link to='/cart' className='d-flex align-items-center gap-10 text-white'>
-                <img src="/images/cart.svg" alt="cart"></img>
+                <img src={cart} alt="cart"></img>
                   <div className='d-flex flex-column'>
                     <p className='badge bg-white text-dark mb-0'>0</p>
                     <p className='mb-0'>$ 500</p>
