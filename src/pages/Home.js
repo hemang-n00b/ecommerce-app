@@ -9,7 +9,7 @@ import { services } from '../utils/Data'
 const Home = () => {
   return (
     <>
-    <Container class1='home-wrapper-1 py5 px-4'>
+    <Container class1='home-wrapper-1 py-5 px-4'>
           <div className='row align-items-center mx-5 px-3'>
             <div className='col-6'>
               <div className='main-banner position-relative py-3'>
@@ -269,12 +269,12 @@ const Home = () => {
           </div>
       </Container>
       <Container class1='blog-wrapper home-wrapper-2 py-4 px-4'>
-        <div className='row'>
+        <div className='row mx-5'>
           <div className='col-12'>
             <h3 className='section-heading'>Our Latest Blogs!</h3>
           </div>
         </div>   
-        <div className='row'>
+        <div className='row mx-5'>
           <div className='col-3'>
             <BlogCard/>
           </div>
