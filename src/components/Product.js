@@ -14,9 +14,9 @@ import { WiDayShowers } from "react-icons/wi";
 const Product = (props) => {
     const {grid} = props;
     let location = useLocation();
-    console.log(location)
+    console.log(grid)
     return <>
-        <div className={`${location.pathname === "/store" ? `gr-${grid}`: "col-3"}`}>
+        <div className={`${location.pathname === "/product" ? `gr-${grid}`: "col-3"}`}>
             <Link to=':id' className="width-100">
             <div className="product-card position-relative mr-0">
                 <div className="wishlist-icon position-absolute">
@@ -58,8 +58,8 @@ const Product = (props) => {
             </div>
             </Link>
         </div>
-        <div className={`${location.pathname === "/store" ? `gr-${grid}`: "col-3"}`}>
-            <Link className="width-100">
+        <div className={`${location.pathname === "/product" ? `gr-${grid}`: "col-3"}`}>
+            <Link to=':id' className="width-100">
             <div className="product-card position-relative mr-0">
                 <div className="wishlist-icon position-absolute">
                     <button className="border-0 bg-transparent">
@@ -101,8 +101,8 @@ const Product = (props) => {
             </div>
             </Link>
         </div>
-        <div className={`${location.pathname === "/store" ? `gr-${grid}`: "col-3"}`}>
-            <Link className="width-100">
+        <div className={`${location.pathname === "/product" ? `gr-${grid}`: "col-3"}`}>
+            <Link to=':id' className="width-100">
             <div className="product-card position-relative mr-0">
                 <div className="wishlist-icon position-absolute">
                     <button className="border-0 bg-transparent">
@@ -146,8 +146,8 @@ const Product = (props) => {
             </div>
             </Link>
         </div>
-        <div className={`${location.pathname === "/store" ? `gr-${grid}`: "col-3"}`}>
-            <Link className="width-100">
+        <div className={`${location.pathname === "/product" ? `gr-${grid}`: "col-3"}`}>
+            <Link to=':id' className="width-100">
             <div className="product-card position-relative mr-0">
                 <div className="wishlist-icon position-absolute">
                     <button className="border-0 bg-transparent">

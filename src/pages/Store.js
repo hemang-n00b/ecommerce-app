@@ -125,9 +125,9 @@ const [grid, setGrid] = useState(3);
                         <div className='d-flex justify-content-between align-items-center'>
                             <div className='d-flex align-items-center gap-10'>
                                 <p className='mb-0 d-block' style={{width:"100px"}}>Sort By: </p>
-                                <select name= "" className='form-control form-select' id="">
+                                <select name= "" className='form-control form-select' defaultValue={"manual"} id="">
                                     <option value="manual">Featured</option>
-                                    <option value="best-selling" selected="selected">Best-Selling</option>
+                                    <option value="best-selling">Best-Selling</option>
                                     <option value="price-ascending">Price, low to high</option>
                                     <option value="price-ascending">Price, high to low</option>
                                 </select>
