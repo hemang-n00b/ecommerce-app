@@ -17,7 +17,7 @@ const Product = (props) => {
     console.log(grid)
     return <>
         <div className={`${location.pathname === "/product" ? `gr-${grid}`: "col-3"}`}>
-            <Link to=':id' className="width-100">
+            <Link to={`${location.pathname !== "/product" ? "/product/0": "0"}`} className="width-100">
             <div className="product-card position-relative mr-0">
                 <div className="wishlist-icon position-absolute">
                     <button className="border-0 bg-transparent">
@@ -59,7 +59,7 @@ const Product = (props) => {
             </Link>
         </div>
         <div className={`${location.pathname === "/product" ? `gr-${grid}`: "col-3"}`}>
-            <Link to=':id' className="width-100">
+            <Link to={`${location.pathname !== "/product" ? "/product/1": "1"}`} className="width-100">
             <div className="product-card position-relative mr-0">
                 <div className="wishlist-icon position-absolute">
                     <button className="border-0 bg-transparent">
@@ -102,7 +102,7 @@ const Product = (props) => {
             </Link>
         </div>
         <div className={`${location.pathname === "/product" ? `gr-${grid}`: "col-3"}`}>
-            <Link to={`${location.pathname === "/product" ? ":id": "/product/:id"}`} className="width-100">
+            <Link to={`${location.pathname !== "/product" ? "/product/2": "2"}`} className="width-100">
             <div className="product-card position-relative mr-0">
                 <div className="wishlist-icon position-absolute">
                     <button className="border-0 bg-transparent">
@@ -147,7 +147,7 @@ const Product = (props) => {
             </Link>
         </div>
         <div className={`${location.pathname === "/product" ? `gr-${grid}`: "col-3"}`}>
-            <Link to={`${location.pathname === "/product" ? ":id": "product/:id"}`} className="width-100">
+            <Link to={`${location.pathname !== "/product" ? "/product/3": "3"}`} className="width-100">
             <div className="product-card position-relative mr-0">
                 <div className="wishlist-icon position-absolute">
                     <button className="border-0 bg-transparent">
