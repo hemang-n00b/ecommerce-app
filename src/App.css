@@ -19,6 +19,12 @@
   --color-febd69: #febd69;
 }
 
+.mar-4{
+  margin-right: 3%;
+  margin-left: 3%;
+
+}
+
 .section-heading{
   font-size:26;
   line-height:32px;
