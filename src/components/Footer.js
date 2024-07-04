@@ -19,9 +19,9 @@ const Footer = () => {
             </div>
           </div>
           <div className='col-7'>
-          <div class="input-group">
-              <input type="text" class="form-control py-1" placeholder="Your Email Address" aria-label="" aria-describedby="basic-addon2"/>
-              <span class="input-group-text p-2" id="basic-addon2">
+          <div className="input-group">
+              <input type="text" className="form-control py-1" placeholder="Your Email Address" aria-label="" aria-describedby="basic-addon2"/>
+              <span className="input-group-text p-2" id="basic-addon2">
                 Suscribe
               </span>
             </div>

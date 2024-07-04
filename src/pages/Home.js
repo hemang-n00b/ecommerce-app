@@ -4,11 +4,12 @@ import Marquee from 'react-fast-marquee'
 import BlogCard from '../components/BlogCard'
 import Product from '../components/Product'
 import SpecialProduct from '../components/SpecialProduct'
+import Container from '../components/Container'
+import { services } from '../utils/Data'
 const Home = () => {
   return (
     <>
-      <section className='home-wrapper-1 py5 px-4'>
-        <div className='container-fluid'>
+    <Container class1='home-wrapper-1 py5 px-4'>
           <div className='row align-items-center mx-5 px-3'>
             <div className='col-6'>
               <div className='main-banner position-relative py-3'>
@@ -62,56 +63,31 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className='home-wrapper-2 py-5 px-4'>
-        <div className='container-fluid'>
+      </Container>
+      <Container class1='home-wrapper-2 py-5 px-4'>
           <div className='row align-items-center mx-5 px-5'>
             <div className='col-12'>
               <div className='services d-flex align-items-center justify-content-between'>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/service-05.png" alt="service-1" className=''/>
+                {
+                  services?.map((i,j)=>{
+                    return (
+                      <div className="d-flex align-items-center gap-15" key={j}>
+                  <img src={i.image} alt="service-1" className=''/>
                   <div>
-                    <h6>Secure Payments</h6>
-                    <p className='mb-0'>100% Protected Payments</p>
+                    <h6>{i.title}</h6>
+                    <p className='mb-0'>{i.tagline}</p>
                   </div>
                 </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/service.png" alt="service-2" className=''/>
-                  <div>
-                    <h6>Free Shipping</h6>
-                    <p className='mb-0'>From all orders over $5</p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/service-02.png" alt="service-3" className=''/>
-                  <div>
-                    <h6>Daily Surprise Offers</h6>
-                    <p className='mb-0'>Save upto 25% </p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/service-03.png" alt="service-4" className=''/>
-                  <div>
-                    <h6>Support 24/7</h6>
-                    <p className='mb-0'>Shop with an Expert</p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/service-04.png" alt="service-5" className=''/>
-                  <div>
-                    <h6>Affordable Prices</h6>
-                    <p className='mb-0'>Get Factory Default Price</p>
-                  </div>
-                </div>
+                    )
+                  })
+                }
+                
 
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className='home-wrapper-2 py-5 px-4'>
-        <div className='container-fluid'>
+      </Container>
+      <Container class1='home-wrapper-2 py-5 px-4'>
           <div className='row align-items-center mx-5'>
             <div className='col-12'>
               <div className='categories d-flex flex-wrap justify-content-between align-items-center px-5 mx-5'>
@@ -174,10 +150,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className='featured-wrapper home-wrapper-2 py-4 px-4'>
-        <div className='container-fluid'>
+      </Container>
+      <Container class1='featured-wrapper home-wrapper-2 py-4 px-4'>
+
         <div className='row special-product-padding'>
           <div className='col-12 mx-4 mb-3'>
             <h3 className='section-heading'>Top selling products!</h3>
@@ -186,10 +161,8 @@ const Home = () => {
         <div className='row justify-content-between d-flex align-items-center product-padding'>  
           <Product/>
         </div>
-        </div>
-      </section>
-      <section className='famous-wrapper-2 home-wrapper-2 py-5 px-4'>
-        <div className='container-fluid'>
+      </Container>
+      <Container class1='famous-wrapper-2 home-wrapper-2 py-5 px-4'>
           <div className='row align-items-center mx-5 px-5'>
 
             <div className='col-3'>
@@ -237,10 +210,8 @@ const Home = () => {
             </div>
 
           </div>
-        </div>
-      </section>
-      <section className='special-wrapper py-5 home-wrapper-2'>
-        <div className='container-fluid px-5'>
+      </Container>
+      <Container class1='special-wrapper py-5 home-wrapper-2'>
           <div className='row special-product-padding mx-2 mb-3'>
             <div className='col-12'>
               <h3 className='section-heading'>Special Products</h3>
@@ -252,10 +223,8 @@ const Home = () => {
             <SpecialProduct/>
             <SpecialProduct/>
           </div>
-        </div>
-      </section>
-      <section className='product-wrapper home-wrapper-2 py-4 px-4'>
-        <div className='container-fluid'>
+      </Container>
+      <Container class1='product-wrapper home-wrapper-2 py-4 px-4'>
         <div className='row special-product-padding'>
           <div className='col-12 mx-4 mb-3'>
             <h3 className='section-heading'>Our Popular Products</h3>
@@ -263,14 +232,9 @@ const Home = () => {
         </div> 
         <div className='row justify-content-between d-flex align-items-center product-padding'>  
           <Product/>
-          <Product/>
-          <Product/>
-          <Product/>
         </div>
-        </div>
-      </section>
-      <section className='home-wrapper-2 py-4 px-4'>
-        <div className='container-fluid'>
+      </Container>
+      <Container class1='home-wrapper-2 py-4 px-4'>
           <div className='row align-items-center mx-5 px-4'>
             <div className='col-12'>
               <div className='marquee-inner-wrapper card-wrapper'>
@@ -303,10 +267,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className='blog-wrapper home-wrapper-2 py-4 px-4'>
-        <div className='container-xxl'>
+      </Container>
+      <Container class1='blog-wrapper home-wrapper-2 py-4 px-4'>
         <div className='row'>
           <div className='col-12'>
             <h3 className='section-heading'>Our Latest Blogs!</h3>
@@ -326,8 +288,7 @@ const Home = () => {
             <BlogCard/>
           </div>
         </div>
-        </div>
-      </section>
+      </Container>
     </>
   )
 }

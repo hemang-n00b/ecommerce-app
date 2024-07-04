@@ -26,9 +26,9 @@ const Header = () => {
             </h2>
           </div>
           <div className='col-5'>
-            <div class="input-group">
-              <input type="text" class="form-control py-2" placeholder="Search Product Here..." aria-label="Search Product Here..." aria-describedby="basic-addon2"/>
-              <span class="input-group-text p-3" id="basic-addon2">
+            <div className="input-group">
+              <input type="text" className="form-control py-2" placeholder="Search Product Here..." aria-label="Search Product Here..." aria-describedby="basic-addon2"/>
+              <span className="input-group-text p-3" id="basic-addon2">
                 <BsSearch className='fs-6'/>
               </span>
             </div>
@@ -81,12 +81,12 @@ const Header = () => {
           <div className='col-3'>
             <div className=' menu-bottom d-flex align-items-center gap-40'>
               <div>
-              <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle bg-transparent border-0 me-5 gap-15 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <div className="dropdown">
+              <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 me-5 gap-15 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="/images/menu.svg" alt="menu"></img>
                 <span className='me-5 d-inline-block'>Shop Categories</span>
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><Link className="dropdown-item text-white" to="">Action</Link></li>
                 <li><Link className="dropdown-item text-white" to="">Another action</Link></li>
                 <li><Link className="dropdown-item text-white" to="">Something else here</Link></li>

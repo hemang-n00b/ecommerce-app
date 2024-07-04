@@ -9,6 +9,7 @@ import Color from '../components/Color'
 import { Link } from 'react-router-dom';
 import { TbGitCompare } from 'react-icons/tb';
 import { AiOutlineHeart } from 'react-icons/ai';
+import Container from '../components/Container';
 const SingleProduct = () => {
     const props = { width: 400, height: 600, zoomWidth: 500, img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-ferarcosn-190819.jpg&fm=jpg" };
     const [orderedProduct, setorderedProduct] = useState(true);
@@ -25,8 +26,7 @@ const SingleProduct = () => {
         <div>
             <Meta title={"Product Name"} />
             <BreadCrumb title="Product Name" />
-            <div className="main-product-wrapper py-5 home-wrapper-2">
-                <div className="container-xxl">
+            <Container class1="main-product-wrapper py-5 home-wrapper-2">
                     <div className="row">
                         <div className="col-6">
                             <div className="main-product-image">
@@ -111,9 +111,8 @@ const SingleProduct = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="description-wrapper py-5 home-wrapper-2">
-                    <div className="container-xxl">
+                </Container>
+                <Container class1="description-wrapper py-5 home-wrapper-2">
                         <div className="row">
                             <div className="col-12">
                                 <h4>Description</h4>
@@ -124,10 +123,8 @@ const SingleProduct = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <section className="reviews-wrapper home-wrapper-2">
-                    <div className="container-xxl">
+                </Container>
+                <Container class1="reviews-wrapper home-wrapper-2">
                         <div className="row">
                             <div className="col-12">
                                 <h3>Reviews</h3>
@@ -143,7 +140,7 @@ const SingleProduct = () => {
                                         </div>
                                         {
                                             orderedProduct && (<div>
-                                                <a className='text-dark text-decoration-underline' href=''>Write a Review</a>
+                                                <a className='text-dark text-decoration-underline' href='#'>Write a Review</a>
                                             </div>)
                                         }
                                     </div>
@@ -173,10 +170,8 @@ const SingleProduct = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section className='product-wrapper home-wrapper-2 py-4 px-4'>
-                    <div className='container-fluid'>
+                </Container>
+                <Container class1='product-wrapper home-wrapper-2 py-4 px-4'>
                         <div className='row special-product-padding'>
                             <div className='col-12 mx-4 mb-3'>
                                 <h3 className='section-heading'>Our Popular Products</h3>
@@ -187,9 +182,7 @@ const SingleProduct = () => {
 
 
                         </div>
-                    </div>
-                </section>
-            </div>
+                </Container>
         </div>
     )
 }

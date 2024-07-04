@@ -833,7 +833,7 @@ padding:10px;
 
 /* Cart starts here */
 
-.cart-header{
+.cart-header , .card-data{
   border-bottom : 1px solid #eaeaea;
 }
 
@@ -846,8 +846,17 @@ padding:10px;
   width:40%;
 }
 
+.cart-col-1 p{
+  color: var(--color-777777);
+  font-size: 14px;
+}
+
 .card-col-2{
   width:10%;
+}
+.card-data h5 .price{
+  font-size: 14px;
+  color: var(--color-1c1b1b);
 }
 
 .card-col-3{
@@ -858,3 +867,17 @@ padding:10px;
   width:15%;
 }
 /* Cart ends here */
+
+/* Shipping Page Starts here */
+
+.total{
+  font-size:14px;
+  color:var(--color-1c1c1b)
+}
+
+.total-price{
+  font-size:16px;
+  color:var(--color-777777)
+}
+
+/* SHipping page ends here*/

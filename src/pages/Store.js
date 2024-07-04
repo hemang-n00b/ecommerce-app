@@ -4,14 +4,14 @@ import Meta from '../components/Meta'
 import StarRatingComponent from 'react-rating-stars-component'
 import Product from '../components/Product'
 import Color from '../components/Color'
+import Container from '../components/Container'
 const Store = () => {
 const [grid, setGrid] = useState(3);
     return (
     <>
     <Meta title={"Store"}/>
     <BreadCrumb title="Store"/>
-    <div className='store-wrapper home-wrapper-2 py-5'>
-        <div className='container-fluid'>
+    <Container calss1='store-wrapper home-wrapper-2 py-5'>
             <div className='row mx-5'>
                 <div className='col-3'>
                     <div className='filter-card mb-3'>
@@ -149,9 +149,8 @@ const [grid, setGrid] = useState(3);
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
-    </div>
+    </Container>
     </>
   )
 }
